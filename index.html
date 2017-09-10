@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+	<title>Formulário</title>
+  </head>
+  <body>
+    <form action='servidor.php' method='POST'>
+      <p>
+	    <h2>Formulário de Cadastro</h2>
+      </p>
+	  <p>
+	    <b>Nome completo: </b>
+		<input type='text' 
+		       name='nome'
+ 		       placeholder='Informe o nome completo' 
+			   required='true'
+			   autofocus='true'>
+	  </p>
+	  <p>
+	    <b>E-mail: </b>
+		<input type='email'
+		       name='email'
+			   placeholder='Informe um E-mail válido'>               
+	  </p>
+	  <p>
+	    <b>Sexo: </b>
+		<input type='radio' name='sexo' id='masculino' value='Masculino'>
+		<label for='masculino'>Masculino</label>
+		<input type='radio' name='sexo' id='feminino' value='Feminino'>
+		<label for='feminino'>Feminino</label>
+	  </p>
+	  <p>
+	    <b>Data de nascimento: </b>
+		<input type='date'
+		       name='data'
+			   id='data'>
+	  </p>
+	  <p>
+	    <b>Grau de escolaridade:</b>
+		<select name='grau_escolaridade' size='1'>
+		  <option value='ensino_medio'>Ensino Médio</option>
+		  <option value='superior_comp'selected='true'>Superior Completo</option>
+		  <option value='pos_graduacao'>Pós-graduação</option>
+		  <option value='mestrado'>Mestrado</option>
+		  <option value='doutorado'>Doutorado</option>
+		</select>
+	  </p>
+	  <p>
+	    <b>Estilos musicais preferidos: </b>
+		<select name='estilo_musica' size='5' multiple='true'>
+		  <option value='rock'>Rock</option>
+		  <option value='funk'>Funk</option>
+		  <option value='samba'>Samba</option>
+		  <option value='pagode'>Pagode</option>
+		  <option value='pop'>Pop</option>
+		</select>	
+	  </p>
+	  <p>
+	    <b>Nome de usuário: </b>
+		<input type='text' 
+		       name='usuario'
+			   value=''>
+	  </p>
+	  <p>
+	    <b>Senha: </b>
+		<input type='password'
+		       name='senha'>
+	  </p>
+	  <p>
+	    <b>Cor preferida: </b>
+		<input type='color'
+		       name='cor'>
+	  </p>
+	  <p>
+	    <b>Quantidade de filhos: </b>
+		<input type='number'
+		       name='filhos'
+			   min='0'>
+	  </p>
+	  <p>
+	    <b>Quantidade de veículos: </b>
+		<input type='range'
+		       name='veiculos'
+			   step='1'
+			   min='0'>
+	  </p>
+	  <p>
+	    <b>Comentários sobre o site: </b>
+		<textarea cols='50'
+		          rows='5'
+			      name='comentarios'>
+		</textarea>	   
+	  <p>
+		<input type='checkbox' 
+		       name='notificacao' 
+			   value='notificacao'
+			   checked>
+			   
+        Desejo receber ofertas via e-mail		
+	  </p>
+	  <p>
+	    <input type='submit' value='Enviar'>
+	    <input type='reset' value='Limpar campos'>
+      </p>
+
+	  
+	  
+  
+  
+  
+    </form>
+  </body>
+</html>
